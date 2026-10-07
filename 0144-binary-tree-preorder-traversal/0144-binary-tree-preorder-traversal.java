@@ -21,7 +21,7 @@ class Solution {
     }
     public void travel(TreeNode root, ArrayList<Integer> ans){
         if(root == null) return;
-        ans.add(root.val); 
+        ans.add(root.val);
         travel(root.left,ans);
         travel(root.right,ans);
     }
